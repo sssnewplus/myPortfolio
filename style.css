@@ -1,0 +1,63 @@
+
+@media screen and (min-width: 767px) {
+  .bottom-nav {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 767px) {
+    .ment {
+      display: none;
+    }
+    .top-navi {
+      justify-content: end;
+    }
+    .body-sec {
+      height: 100%;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+}
+  
+
+body {
+    font-family: 'Nunito', Sans-serif;
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.body-sec {
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: 93px;
+    margin-bottom: 100px;
+    }
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+nav {
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.nav-item {
+  text-decoration: none;
+}
+
+.profile-pic {
+  height: 150px;
+  width: 150px;
+}
