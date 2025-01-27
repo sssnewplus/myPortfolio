@@ -11,34 +11,32 @@
 </head>
 <body>
 
-  <!-- fixed top navbar -->
-  <nav class="navbar navbar-expand-lg mx-1 border-bottom border-secondary fixed-top">
-    <div class="container-fluid">
-      <div class="container-fluid d-flex">
-        <img src="img/icon.jpg" class="rounded-circle img-responsive border border-secondary icon mx-1 justify-content-start">
-        <div class="container justify-content-center top-navi">
-          <button class="btn btn-dark">
-            <a class="nav-link text-light fw-bold" href="index.html">Home</a>
-          </button>
-          <button class="btn">
-            <a class="nav-link text-light fw-bold" href="blog_home.html">Blog</a>
-          </button>
-          <button class="btn">
-            <a class="nav-link text-light fw-bold" href="about.html">About Me</a>
-          </button>
-        </div>
-        <div class="container ment">
-          <button class="btn border border-secondary mx-1">
-            <a class="nav-link text-warning fw-bold" href="milky_way.html">Mentorship</a>
-          </button>
-          <button class="btn btn-success border border-secondary mx-1">
-            <a class="nav-link text-light fw-bold" href="contact.html">Contacts</a>
-          </button>
+    <!-- fixed top navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top border-bottom border-secondary bg-dark">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center w-100">
+          <!-- logo -->
+          <img src="img/icon.jpg" alt="Logo" class="rounded-circle img-responsive border border-secondary icon mx-2" style="width: 50px; height: 50px;">
+  
+          <!-- navigation links -->
+          <div class="d-flex justify-content-center flex-grow-1 ">
+            <a class="btn btn-dark nav-link text-light fw-bold mx-2 border border-secondary p-2" href="index.html">Home</a>
+            <a class="btn btn-dark nav-link text-light fw-bold mx-2 border border-secondary p-2" href="blog_home.html">Blog</a>
+            <a class="btn btn-dark nav-link text-light fw-bold mx-2 border border-secondary p-2" href="about.html">About Me</a>
+          </div>
+          <!-- end of navigation liks -->
+  
+          <!-- right side links -->
+          <div class="justify-content-end d-none d-md-flex">
+            <a class="btn btn-dark border border-secondary mx-1 text-warning fw-bold" href="milky_way.html">Mentorship</a>
+            <a class="btn btn-success border border-secondary mx-1 text-light fw-bold" href="contact.html">Contacts</a>
+          </div>
+          <!-- end of right side links -->
+  
         </div>
       </div>
-    </div>
-  </nav>
-  <!-- end of top navbar -->
+    </nav>
+    <!-- end of fixed top navbar -->
 
   <!-- body sec -->
   <section class="container-fluid body-sec">
@@ -121,20 +119,14 @@
   </section>
   <!-- end of body sec -->
 
-  <!-- fixed bottom navbar --> 
-  <nav class="bottom-nav navbar navbar-expand-lg mx-1 border-top border-secondary fixed-bottom">
-    <div class="container-fluid">
-      <div class="container d-flex">
-        <button class="btn border border-secondary mx-1">
-          <a class="nav-link text-warning fw-bold" href="milky_way.html">Mentorship</a>
-        </button>
-        <button class="btn btn-success border border-secondary">
-          <a class="nav-link text-light fw-bold" href="contact.html">Contacts</a>
-        </button>
-      </div>
+  <!-- fixed bottom navbar -->
+  <nav class="d-md-none navbar navbar-expand-lg fixed-bottom border-top border-secondary bg-dark">
+    <div class="container-fluid d-flex justify-content-center">
+      <a class="btn btn-dark border border-secondary mx-1 text-warning fw-bold" href="milky_way.html">Mentorship</a>
+      <a class="btn btn-success border border-secondary mx-1 text-light fw-bold" href="contact.html">Contacts</a>
     </div>
   </nav>
-  <!-- end of bottom navbar -->
+  <!-- end of fixed bottom navbar -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="script.js"></script>

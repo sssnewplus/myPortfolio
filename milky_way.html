@@ -11,41 +11,39 @@
 </head>
 <body>
 
-  <!-- fixed top navbar -->
-  <nav class="navbar navbar-expand-lg mx-1 border-bottom border-secondary fixed-top">
-    <div class="container-fluid">
-      <div class="container-fluid d-flex">
-        <img src="img/icon.jpg" class="rounded-circle img-responsive border border-secondary icon mx-1 justify-content-start">
-        <div class="container justify-content-center top-navi">
-          <button class="btn btn-dark">
-            <a class="nav-link text-light fw-bold" href="index.html">Home</a>
-          </button>
-          <button class="btn">
-            <a class="nav-link text-light fw-bold" href="blog_home.html">Blog</a>
-          </button>
-          <button class="btn">
-            <a class="nav-link text-light fw-bold" href="about.html">About Me</a>
-          </button>
-        </div>
-        <div class="container ment">
-          <button class="btn border border-secondary mx-1">
-            <a class="nav-link text-warning fw-bold" href="milky_way.html">Mentorship</a>
-          </button>
-          <button class="btn btn-success border border-secondary mx-1">
-            <a class="nav-link text-light fw-bold" href="contact.html">Contacts</a>
-          </button>
+    <!-- fixed top navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top border-bottom border-secondary bg-dark">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center w-100">
+          <!-- logo -->
+          <img src="img/icon.jpg" alt="Logo" class="rounded-circle img-responsive border border-secondary icon mx-2" style="width: 50px; height: 50px;">
+  
+          <!-- navigation links -->
+          <div class="d-flex justify-content-center flex-grow-1 ">
+            <a class="btn btn-dark nav-link text-light fw-bold mx-2 border border-secondary p-2" href="index.html">Home</a>
+            <a class="btn btn-dark nav-link text-light fw-bold mx-2 border border-secondary p-2" href="blog_home.html">Blog</a>
+            <a class="btn btn-dark nav-link text-light fw-bold mx-2 border border-secondary p-2" href="about.html">About Me</a>
+          </div>
+          <!-- end of navigation liks -->
+  
+          <!-- right side links -->
+          <div class="justify-content-end d-none d-md-flex">
+            <a class="btn btn-dark border border-secondary mx-1 text-warning fw-bold" href="milky_way.html">Mentorship</a>
+            <a class="btn btn-success border border-secondary mx-1 text-light fw-bold" href="contact.html">Contacts</a>
+          </div>
+          <!-- end of right side links -->
+  
         </div>
       </div>
-    </div>
-  </nav>
-  <!-- end of fixed top navbar -->
+    </nav>
+    <!-- end of fixed top navbar -->
 
   <!-- body sec -->
   <section class="container-fluid body-sec">
     <div class="container text-center mb-3">
       <div class="container-fluid text-center">
         <h1 class="text-light fw-bolder m-1">
-          The Milky Way
+          🌌 The Milky Way - Mentoring Form
         </h1>
       </div>  
     </div>
@@ -57,13 +55,7 @@
           </p>
           <div class="row">
             <div class="container">
-              <p class="lead text-center text-warning">
-                <span>You wanted to join, participate and become expert in python back-end engineering?</span>
-                <br>
-                <span>feel free to fill the following form and dive right in to the field.</span>
-                <br>
-                <span>we collaborate, engage and coded out for fun &#128512;</span>
-              </p>
+              <p class="lead text-center text-warning">Join us to dive into the exciting world of full-stack web development! Fill out the form below to get started. 😊</p>
             </div>
           </div>
         </div>
@@ -71,72 +63,63 @@
           <div class="row">
             <div class="container text-light col-lg-10">
               <form method="POST" action="milky_way.html">
-                <h2 class="my-3 text-center fw-bold">Mentoring Information Form</h2> 
-                <div class="form-group mb-3">
-                    <label for="name">Name:</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="enter your fullname" required>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name:</label>
+                  <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
                 </div>
-
-                <div class="form-group mb-3">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="enter valid email address" required>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" id="email" class="form-control" placeholder="Enter a valid email address" required>
                 </div>
-
-                <div class="form-group mb-3">
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="enter valid phone number" required>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number:</label>
+                  <input type="tel" id="phone" class="form-control" placeholder="Enter a valid phone number" required>
                 </div>
-
-                <div class="form-group mb-3">
-                    <label for="goals">Goals and Expectations:</label>
-                    <textarea class="form-control" id="goals" name="goals" rows="4" placeholder="what do you expect?" required></textarea>
+                <div class="mb-3">
+                  <label for="goals" class="form-label">Goals and Expectations:</label>
+                  <textarea id="goals" class="form-control" rows="3" placeholder="What do you hope to achieve?" required></textarea>
                 </div>
-
-                <div class="form-group mb-3">
-                    <label for="background">Background and Experience:</label>
-                    <textarea class="form-control" id="background" name="background" rows="4" placeholder="your current experience" ></textarea>
+                <div class="mb-3">
+                  <label for="experience" class="form-label">Background and Experience:</label>
+                  <textarea id="experience" class="form-control" rows="3" placeholder="Share your current level of experience." required></textarea>
                 </div>
-                <div class="form-group mb-3">
-                    <label for="weaknesses">Areas for Improvement:</label>
-                    <textarea class="form-control" id="weaknesses" name="weaknesses" rows="4" placeholder="if you have any weakness specify"></textarea>
+                <div class="mb-3">
+                  <label for="improvement" class="form-label">Areas for Improvement:</label>
+                  <textarea id="improvement" class="form-control" rows="3" placeholder="What skills or areas would you like to strengthen?" required></textarea>
                 </div>
-
-                <div class="form-group mb-3">
-                    <label for="learning-style">Learning Style:</label>
-                    <select class="form-control" id="learning-style" name="learning_style">
-                        <option value="hands-on">Hands-On</option>
-                        <option value="reading">Reading</option>
-                        <option value="listening">Listening</option>
-                        <option value="combination">Combination</option>
-                    </select>
+                <div class="mb-3">
+                  <label for="learning-style" class="form-label">Learning Style:</label>
+                  <select id="learning-style" class="form-select">
+                    <option selected>Hands-On</option>
+                    <option>Visual</option>
+                    <option>Auditory</option>
+                    <option>Reading/Writing</option>
+                  </select>
                 </div>
-                <div class="form-group mb-3">
-                    <label for="communication">Preferred Communication Method:</label>
-                    <select class="form-control" id="communication" name="communication">
-                        <option value="meetings">Regular Meetings</option>
-                        <option value="email">Email</option>
-                        <option value="chat">Chat</option>
-                    </select>
+                <div class="mb-3">
+                  <label for="communication" class="form-label">Preferred Communication Method:</label>
+                  <select id="communication" class="form-select">
+                    <option selected>Regular Meetings</option>
+                    <option>Email</option>
+                    <option>Chat</option>
+                    <option>Video Calls</option>
+                  </select>
                 </div>
-
-                <div class="form-group mb-3">
-                    <label for="challenges">Challenges and Obstacles:</label>
-                    <textarea class="form-control" id="challenges" name="challenges" rows="4" placeholder="specify anything that's stopping you"></textarea>
+                <div class="mb-3">
+                  <label for="challenges" class="form-label">Challenges and Obstacles:</label>
+                  <textarea id="challenges" class="form-control" rows="3" placeholder="What’s holding you back?"></textarea>
                 </div>
-
-                <div class="form-group mb-3">
-                    <label for="feedback">Feedback and Support Needs:</label>
-                    <textarea class="form-control" id="feedback" name="feedback" rows="4" placeholder="optional"></textarea>
+                <div class="mb-3">
+                  <label for="feedback" class="form-label">Feedback and Support Needs:</label>
+                  <textarea id="feedback" class="form-control" rows="3" placeholder="(Optional) Share how we can best support you."></textarea>
                 </div>
-
-                <div class="form-group mb-3">
-                    <label for="career">Career Aspirations:</label>
-                    <textarea class="form-control" id="career" name="career" rows="4" placeholder="optional"></textarea>
+                <div class="mb-3">
+                  <label for="aspirations" class="form-label">Career Aspirations:</label>
+                  <textarea id="aspirations" class="form-control" rows="3" placeholder="(Optional) What are your long-term career goals?"></textarea>
                 </div>
-
-                <div class="form-group mb-3">
-                    <label for="resources">Resource Accessibility:</label>
-                    <textarea class="form-control" id="resources" name="resources" rows="4" placeholder="limit your access to resources, you have laptop, desktop or whatever, specify" required></textarea>
+                <div class="mb-3">
+                  <label for="resources" class="form-label">Resource Accessibility:</label>
+                  <textarea id="resources" class="form-control" rows="3" placeholder="Specify the tools you have access to (e.g., laptop, desktop, etc.)." required></textarea>
                 </div>
                 <div class="text-center">
                   <button type="submit" class="btn btn-primary mb-5">
@@ -159,20 +142,14 @@
   </section>
   <!-- end of body sec -->
 
-  <!-- fixed bottom navbar --> 
-  <nav class="bottom-nav navbar navbar-expand-lg mx-1 border-top border-secondary fixed-bottom">
-    <div class="container-fluid">
-      <div class="container d-flex">
-        <button class="btn border border-secondary mx-1">
-          <a class="nav-link text-warning fw-bold" href="milky_way.html">Mentorship</a>
-        </button>
-        <button class="btn btn-success border border-secondary">
-          <a class="nav-link text-light fw-bold" href="contact.html">Contacts</a>
-        </button>
-      </div>
+  <!-- fixed bottom navbar -->
+  <nav class="d-md-none navbar navbar-expand-lg fixed-bottom border-top border-secondary bg-dark">
+    <div class="container-fluid d-flex justify-content-center">
+      <a class="btn btn-dark border border-secondary mx-1 text-warning fw-bold" href="milky_way.html">Mentorship</a>
+      <a class="btn btn-success border border-secondary mx-1 text-light fw-bold" href="contact.html">Contacts</a>
     </div>
   </nav>
-  <!-- end of bottom navbar -->
+  <!-- end of fixed bottom navbar -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="script.js"></script>

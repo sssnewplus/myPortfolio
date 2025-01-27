@@ -1,25 +1,3 @@
-
-@media screen and (min-width: 767px) {
-  .bottom-nav {
-    overflow: hidden;
-  }
-}
-
-@media screen and (max-width: 767px) {
-    .ment {
-      display: none;
-    }
-    .top-navi {
-      justify-content: end;
-    }
-    .body-sec {
-      height: 100%;
-      margin-top: 100px;
-      margin-bottom: 100px;
-    }
-}
-  
-
 body {
     font-family: 'Nunito', Sans-serif;
     background-image: url('./img/background.jpg');
@@ -28,7 +6,6 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-
 .body-sec {
     background-image: url('./img/background.jpg');
     background-size: cover;
@@ -38,13 +15,11 @@ body {
     height: 100%;
     margin-top: 93px;
     margin-bottom: 100px;
-    }
-
+}
 .icon {
   height: 50px;
   width: 50px;
 }
-
 nav {
     background-image: url('./img/background.jpg');
     background-size: cover;
@@ -56,8 +31,15 @@ nav {
 .nav-item {
   text-decoration: none;
 }
-
 .profile-pic {
   height: 150px;
   width: 150px;
+}
+.know-btn:hover {
+  color: #f8f9fa;
+  background-color:#212529 ;
+}
+.join-btn:hover {
+  color: #f8f9fa;
+  background-color:#212529 ;
 }
